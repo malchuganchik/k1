@@ -4,7 +4,7 @@
 
 /* Шапка */
 @import url(./blocks/header/header.css);
-@import url(./blocks/header/__inner/header__inner.css);
+@import url("blocks/header/__inner/header__inner.css");
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__logo/header___logo_before/header__logo_before.css);
 @import url(./blocks/header/__nav/header__nav.css);
