@@ -1,0 +1,159 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+    padding: 25px;
+    border-radius: 20px;
+
+    min-height: 460px;
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid rgba(46, 125, 50, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Верхняя декоративная линия */
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2E7D32, #4CAF50);
+
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover::before {
+    transform: scaleX(1);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.2);
+    border-color: #2E7D32;
+}
+
+/* Картинка */
+.product-card__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    background: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-card__img {
+    transform: scale(1.05);
+}
+
+/* Название */
+.product-card__name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+    line-height: 1.3;
+}
+
+/* Цена */
+.product-card__price {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Сезонность */
+.product-card__season {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF9800, #FFB74D);
+    color: #fff;
+
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 600;
+
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.3);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.product-card__season--placeholder {
+    visibility: hidden;
+}
+
+/* Фермер */
+.product-card__farmer {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Кнопки в карточке */
+.product-card__actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.product-card__btn {
+    flex: 1;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.product-card__btn--green {
+    background: linear-gradient(135deg, #2E7D32, #1B5E20);
+}
+
+.product-card__btn--red {
+    background: linear-gradient(135deg, #E53935, #B71C1C);
+}
+
+.product-card__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.03);
+}
+
+.product-card__btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптив */
+@media (max-width: 480px) {
+    .product-card {
+        min-height: auto;
+    }
+}

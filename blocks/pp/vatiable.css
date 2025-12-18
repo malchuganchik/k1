@@ -1,0 +1,27 @@
+:root {
+    --primary: #2E7D32;
+    --primary-dark: #1B5E20;
+    --primary-light: #A5D6A7;
+    --secondary: #5D4037;
+    --accent: #FFC107;
+    --dark: #333;
+    --light: #f9f9f9;
+    --gray: #757575;
+    --bg-light: #EFEBE9;
+    --text: #333;
+
+    --font-header: 'Merriweather', serif;
+    --font-text: 'Open Sans', sans-serif;
+
+    --radius: 10px;
+    --radius-big: 16px;
+    --shadow: 0 3px 10px rgba(0,0,0,0.1);
+    --shadow-hover: 0 15px 40px rgba(0,0,0,0.12);
+    --card-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+    --space-xs: 4px;
+    --space-s: 8px;
+    --space-m: 16px;
+    --space-l: 32px;
+    --space-xl: 48px;
+}

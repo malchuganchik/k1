@@ -1,0 +1,7 @@
+.footer-logo {
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,0 +1,8 @@
+.products {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;
+}
+@media (max-width: 1024px) { .products__grid { grid-template-columns: repeat(2,1fr); } .products__title { font-size: 32px; margin-bottom: 30px; } }
+@media (max-width: 768px) { .products__grid { grid-template-columns: repeat(2,1fr); gap: 20px; } .products__title { font-size: 28px; margin-bottom: 30px; } }
+@media (max-width: 480px) { .products__grid { grid-template-columns: 1fr; gap: 15px; max-width: 100%; margin: 0 auto; } .products__title { font-size: 28px; margin-bottom: 25px; } }
