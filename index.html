@@ -15,10 +15,15 @@
     <!-- Header -->
 <header class="header">
   <div class="container header__inner">
-    <a href="index.html" class="logo">Farm Market</a>
+    <a href="index.html" class="header__logo">Farm Market</a>
 
-    <div class="header__search-wrapper">
-      <input type="text" class="header__search" placeholder="Поиск товаров..." id="header-search">
+    <div class="header__search">
+      <input
+        type="text"
+        class="header__search-input"
+        placeholder="Поиск товаров..."
+        id="header-search"
+      />
       <button class="header__search-btn" aria-label="Поиск">🔍</button>
     </div>
 
@@ -31,24 +36,27 @@
     </nav>
 
     <button class="header__burger">
-      <span></span><span></span><span></span>
+      <span class="header__burger-span"></span>
+      <span class="header__burger-span"></span>
+      <span class="header__burger-span"></span>
     </button>
   </div>
-    </header>
+</header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero__content">
-                <h1 class="hero__title">Свежие фермерские продукты</h1>
-                <p class="hero__subtitle">Натуральные продукты от местных фермеров с доставкой на дом</p>
-                <div class="hero__actions">
-                    <a href="catalog.html" class="btn btn--primary">Смотреть каталог</a>
-                    <a href="about.html" class="btn btn--secondary">О нас</a>
-                </div>
-            </div>
-        </div>
-    </section>
+ <section class="hero">
+  <div class="container">
+    <h1 class="hero__title">Свежие фермерские продукты</h1>
+    <p class="hero__subtitle">
+      Натуральные продукты от местных фермеров с доставкой на дом
+    </p>
+
+    <div class="hero__actions">
+      <a href="catalog.html" class="btn btn__primary">Смотреть каталог</a>
+      <a href="about.html" class="btn btn__secondary">О нас</a>
+    </div>
+  </div>
+</section>
 
     <!-- Categories Section -->
     <section class="categories">
@@ -109,14 +117,12 @@
     </section>
 
     <!-- Popular Products -->
-    <section class="products">
-        <div class="container">
-            <h2 class="products__title">Популярные товары</h2>
-            <div class="products__grid">
-            </div>
-        </div>
-    </section>
-
+  <section class="products">
+  <div class="container">
+    <h2 class="products__title">Популярные товары</h2>
+    <div class="products__grid"></div>
+  </div>
+</section>
 
 <section class="season-calendar">
     <div class="container">
@@ -151,32 +157,30 @@
 
 
     <!-- Footer -->
-  <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    Farm Market
-                    <p>Свежие продукты от фермеров с 2025 года</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Быстрые ссылки</h4>
-                    <a href="index.html">Главная</a>
-                    <a href="catalog.html">Каталог</a>
-                    <a href="farmers.html">Фермеры</a>
-                    <a href="about.html">О рынке</a>
-                </div>
-                <div class="footer-contact">
-                    <h4>Контакты</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> г. Тирасполь</p>
-                    <p><i class="fas fa-phone"></i> +373 777 73 377</p>
-                    <p><i class="fas fa-clock"></i> Сб-Вс: 8:00-15:00</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 Farm Market — фермерские продукты рядом с вами.</p>
-            </div>
-        </div>
-    </footer>
+ <footer class="footer">
+  <div class="container footer__content">
+    <div class="footer__logo">
+      Farm Market
+      <p>Свежие продукты от фермеров с 2025 года</p>
+    </div>
+
+    <div class="footer__links">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="farmers.html">Фермеры</a>
+      <a href="about.html">О рынке</a>
+    </div>
+
+    <div class="footer__contact">
+      <p>г. Тирасполь</p>
+      <p>+373 777 73 377</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    © 2025 Farm Market
+  </div>
+</footer>
 
     </div>
 <!-- JS -->
